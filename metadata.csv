@@ -2,37 +2,39 @@ Declare,metatab-latest
 Title,Response to Resistance
 Description,Austin Police Department response to police resistance incidents.
 Identifier,209b4c67-2e2f-4c1c-a7c3-d56b1ec72cae
-Name,austintexas.gov-response_to_resistance-1.1.1
+Name,austintexas.gov-response_to_resistance-1.1.4
 Dataset,response_to_resistance
 Origin,austintexas.gov
 Time,
 Space,
 Grain,
 Variant,
-Version,1.1.1
+Version,1.1.4
 Version.Major,1
 Version.Minor,1
-Version.Patch,1
+Version.Patch,4
 Created,2020-06-08T23:23:43
-Modified,2020-06-09T16:04:13
+Modified,2020-06-10T19:31:14
 Giturl,https://github.com/metatab-packages/policedata-collection.git
-
+""
 Section,Contacts,Email,Organization,Url,
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,
-
+""
 Section,Documentation,Title,Description,,
 Documentation,file:README.md,README,,,
 Documentation,https://data.austintexas.gov/Public-Safety/GUIDE-2017-R2R/27tg-e4dt/data,Data Dictionary,"A spreadsheet with field definitions, for 2017",,
-Homepage,https://data.austintexas.gov/browse?q=Response+To+Resistence&sortBy=relevance&page=1,R2R Datasets,A search on the Austin open data site for R2R datasets. 
-
+Homepage,https://data.austintexas.gov/browse?q=Response+To+Resistence&sortBy=relevance&page=1,R2R Datasets,A search on the Austin open data site for R2R datasets.,,
+Image,docs/sr_dummy_coverage.png,Dummy Variable Coverage,True Values for Subject Resistance Dummy Variables by Date,,
+""
 Section,References,Name,Description,,
-
+""
 Section,Resources,Name,Description,,
 Datafile,https://data.austintexas.gov/api/views/iydp-s2cf/rows.csv?accessType=DOWNLOAD,r2r_2015,"Response to Resistance, 2015",,
 Datafile,https://data.austintexas.gov/api/views/h8jq-pcz3/rows.csv?accessType=DOWNLOAD,r2r_2016,"Response to Resistance, 2016",,
 Datafile,https://data.austintexas.gov/api/views/5evd-3tba/rows.csv?accessType=DOWNLOAD,r2r_2017,"Response to Resistance, 2017",,
 Datafile,https://data.austintexas.gov/api/views/qdzd-vqbv/rows.csv?accessType=DOWNLOAD,r2r_2018,"Response to Resistance, 2018",,
-
+Datafile,notebooks/Combine.ipynb#df,r2r_2015_2018,"Combined R2R files, 2015 to 2018",,
+""
 Section,Schema,DataType,AltName,Description,Has_Codes
 Table,r2r_2017,,,,
 Table.Column,RIN,integer,rin,,
@@ -160,3 +162,52 @@ Table.Column,Officer Yrs of Service,integer,officer_yrs_of_service,,
 Table.Column,X-Coordinate,integer,x_coordinate,,
 Table.Column,Y-Coordinate,integer,y_coordinate,,
 Table.Column,Council District,integer,council_district,,
+Table,r2r_2015_2018,,,,
+Table.Column,rin,integer,,,
+Table.Column,primary_key,integer,,,
+Table.Column,date_occurred,datetime,,,
+Table.Column,time_occurred,string,,,
+Table.Column,location,string,,,
+Table.Column,area_command,string,,,
+Table.Column,nature_of_contact,string,,,
+Table.Column,reason_desc,string,,,
+Table.Column,r2r_level,integer,,,
+Table.Column,master_subject_id,string,,,
+Table.Column,subject_sex,string,,,
+Table.Column,subject_race,string,,,
+Table.Column,subject_ethnicity,string,,,
+Table.Column,subject_conduct_desc,string,,,
+Table.Column,subject_resistance,string,,,
+Table.Column,weapon_used_1,string,,,
+Table.Column,weapon_used_2,string,,,
+Table.Column,weapon_used_3,string,,,
+Table.Column,weapon_used_4,string,,,
+Table.Column,weapon_used_5,string,,,
+Table.Column,number_shots,integer,,,
+Table.Column,subject_effects,string,,,
+Table.Column,effect_on_officer,string,,,
+Table.Column,officer_organization_desc,string,,,
+Table.Column,officer_commission_date,datetime,,,
+Table.Column,officer_yrs_of_service,integer,,,
+Table.Column,x_coordinate,integer,,,
+Table.Column,y_coordinate,integer,,,
+Table.Column,council_district,integer,,,
+Table.Column,census_tract,number,,,T
+Table.Column,county,string,,,
+Table.Column,location_1,string,,,
+Table.Column,zip,integer,,,
+Table.Column,county_description,string,,,
+Table.Column,sr_not_resistant,string,,,
+Table.Column,sr_edged_weapon,string,,,
+Table.Column,sr_preparatory_resistance,string,,,
+Table.Column,sr_aggressive_resistance,string,,,
+Table.Column,sr_firearm,string,,,
+Table.Column,sr_defensive_resistance,string,,,
+Table.Column,sr_evading_fleeing_motor_vehicle,string,,,
+Table.Column,sr_empty_hand_defensive_resistance,string,,,
+Table.Column,sr_passive_resistance,string,,,
+Table.Column,sr_deadly_resistance,string,,,
+Table.Column,sr_verbal_resistance_aggression,string,,,
+Table.Column,sr_other,string,,,
+Table.Column,sr_none,string,,,
+Table.Column,sr_empty_hand_active_aggression,string,,,

@@ -31,10 +31,15 @@ def row_generator(resource, doc, env, *args, **kwargs):
 
     """
 
-    yield 'a b c'.split()
+    # Combine all of the headers
+    headers = []
 
-    for i in range(10):
-        yield [i, i * 2, i * 3]
+    for r in doc.resources():
+        if r.name == 'r2r_2015_2018':
+            continue
+    
+        
+    
 
 
 def example_transform(v, row, row_n, i_s, i_d, header_s, header_d, scratch, errors, accumulator):
