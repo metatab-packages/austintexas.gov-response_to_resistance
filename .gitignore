@@ -7,3 +7,5 @@ new-notebook.ipynb
 metadata.txt
 _packages
 *.pyc
+.DS_Store
+

@@ -1,12 +1,12 @@
 # Response to Resistence
 
 This data package collects multiple years of the Response to Resistance dataset
-from the Autin Police department. It includes each of the four source files and
-a fifth file tha combines the four source files.
+from the Austin, TX Police department. It includes each of the four source
+files and a fifth file that combines the four source files.
 
 ## Processing & Caveats
 
-The souces files, one year of data per file, have slightly different columns,
+The source files, one year of data per file, have slightly different columns,
 so in the combined file there are some columns which will not have data across
 all years. These columns are:
 

@@ -16,25 +16,25 @@ Version.Patch,4
 Created,2020-06-08T23:23:43
 Modified,2020-06-10T19:31:14
 Giturl,https://github.com/metatab-packages/policedata-collection.git
-""
+
 Section,Contacts,Email,Organization,Url,
 Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,
-""
+
 Section,Documentation,Title,Description,,
 Documentation,file:README.md,README,,,
 Documentation,https://data.austintexas.gov/Public-Safety/GUIDE-2017-R2R/27tg-e4dt/data,Data Dictionary,"A spreadsheet with field definitions, for 2017",,
 Homepage,https://data.austintexas.gov/browse?q=Response+To+Resistence&sortBy=relevance&page=1,R2R Datasets,A search on the Austin open data site for R2R datasets.,,
 Image,docs/sr_dummy_coverage.png,Dummy Variable Coverage,True Values for Subject Resistance Dummy Variables by Date,,
-""
+
 Section,References,Name,Description,,
-""
+
 Section,Resources,Name,Description,,
 Datafile,https://data.austintexas.gov/api/views/iydp-s2cf/rows.csv?accessType=DOWNLOAD,r2r_2015,"Response to Resistance, 2015",,
 Datafile,https://data.austintexas.gov/api/views/h8jq-pcz3/rows.csv?accessType=DOWNLOAD,r2r_2016,"Response to Resistance, 2016",,
 Datafile,https://data.austintexas.gov/api/views/5evd-3tba/rows.csv?accessType=DOWNLOAD,r2r_2017,"Response to Resistance, 2017",,
 Datafile,https://data.austintexas.gov/api/views/qdzd-vqbv/rows.csv?accessType=DOWNLOAD,r2r_2018,"Response to Resistance, 2018",,
 Datafile,notebooks/Combine.ipynb#df,r2r_2015_2018,"Combined R2R files, 2015 to 2018",,
-""
+
 Section,Schema,DataType,AltName,Description,Has_Codes
 Table,r2r_2017,,,,
 Table.Column,RIN,integer,rin,,
@@ -105,7 +105,7 @@ Table.Column,county description,string,county_description,,
 Table,r2r_2015,,,,
 Table.Column,RIN,integer,rin,,
 Table.Column,Primary Key,integer,primary_key,,
-Table.Column,Date Occurred,datetime,date_occurred,,
+Table.Column, Date Occurred,datetime,date_occurred,,
 Table.Column,Time Occurred,string,time_occurred,,
 Table.Column,Location,string,location,,
 Table.Column,Area Command,string,area_command,,
